@@ -14,4 +14,6 @@
 
 typedef size_t cx_size_t;
 
+#define CX_UNSIGNED(integer) ((integer >= 0) ? (integer) : 0)
+
 #endif
