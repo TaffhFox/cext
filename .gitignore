@@ -1,0 +1,6 @@
+.DS_Store
+*.o
+*.a
+*.dSYM
+Thumbs.db
+*.xcuserdata
