@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2788E275259FC00700DF047A /* CXString.h in Headers */ = {isa = PBXBuildFile; fileRef = 2788E273259FC00700DF047A /* CXString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2788E276259FC00700DF047A /* CXString.c in Sources */ = {isa = PBXBuildFile; fileRef = 2788E274259FC00700DF047A /* CXString.c */; };
+		2788E276259FC00700DF047A /* Strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 2788E274259FC00700DF047A /* Strings.c */; };
 		2788E27B259FD93500DF047A /* CXTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2788E279259FD85900DF047A /* CXTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D3F47D25A2871600B750AD /* CXDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D3F47B25A2871600B750AD /* CXDebug.h */; };
+		27D3F47E25A2871600B750AD /* Logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 27D3F47C25A2871600B750AD /* Logging.c */; };
+		27D3F48125A2874100B750AD /* UnixColors.c in Sources */ = {isa = PBXBuildFile; fileRef = 27D3F48025A2874100B750AD /* UnixColors.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27773E95259F9AD6004004A2 /* libCExt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCExt.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2788E273259FC00700DF047A /* CXString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXString.h; sourceTree = "<group>"; };
-		2788E274259FC00700DF047A /* CXString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CXString.c; sourceTree = "<group>"; };
+		2788E274259FC00700DF047A /* Strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Strings.c; sourceTree = "<group>"; };
 		2788E279259FD85900DF047A /* CXTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXTypes.h; sourceTree = "<group>"; };
+		27D3F47B25A2871600B750AD /* CXDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXDebug.h; sourceTree = "<group>"; };
+		27D3F47C25A2871600B750AD /* Logging.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Logging.c; sourceTree = "<group>"; };
+		27D3F48025A2874100B750AD /* UnixColors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UnixColors.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				2788E279259FD85900DF047A /* CXTypes.h */,
+				27D3F47A25A285C900B750AD /* Debug */,
 				2788E272259FBFEA00DF047A /* Strings */,
 				27773E96259F9AD6004004A2 /* Products */,
 			);
@@ -51,9 +58,19 @@
 			isa = PBXGroup;
 			children = (
 				2788E273259FC00700DF047A /* CXString.h */,
-				2788E274259FC00700DF047A /* CXString.c */,
+				2788E274259FC00700DF047A /* Strings.c */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		27D3F47A25A285C900B750AD /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				27D3F47B25A2871600B750AD /* CXDebug.h */,
+				27D3F47C25A2871600B750AD /* Logging.c */,
+				27D3F48025A2874100B750AD /* UnixColors.c */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +82,7 @@
 			files = (
 				2788E275259FC00700DF047A /* CXString.h in Headers */,
 				2788E27B259FD93500DF047A /* CXTypes.h in Headers */,
+				27D3F47D25A2871600B750AD /* CXDebug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2788E276259FC00700DF047A /* CXString.c in Sources */,
+				27D3F47E25A2871600B750AD /* Logging.c in Sources */,
+				2788E276259FC00700DF047A /* Strings.c in Sources */,
+				27D3F48125A2874100B750AD /* UnixColors.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  CXString.c
+//  Strings.c
 //  CExt
 //
 //  Copyright (c) TaffhFox (https://github.com/taffhfox) 2021

@@ -3,4 +3,4 @@
 *.a
 *.dSYM
 Thumbs.db
-*.xcuserdata
+*.xcuserdata*

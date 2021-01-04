@@ -20,9 +20,6 @@
 #define CX_STRING_ALLOCSTEP 64
 
 typedef struct CXString* CXStringRef;
-typedef wchar_t cx_wchar_t;
-
-typedef enum { CX_STRING_DEFAULT = 0, CX_STRING_UPPERCASE = 1, CX_STRING_LOWERCASE = 2, CX_STRING_REVERSE = 3 } cx_casetransformation_t;
 
 /// Creates an empty Unicode string
 CXStringRef CXStringCreateEmpty(void);
