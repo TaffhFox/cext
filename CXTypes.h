@@ -25,20 +25,21 @@ typedef enum {
 
 typedef wchar_t cx_wchar_t;
 
+// Unix ANSI color codes
+
 typedef enum {
-    CX_COLOR_DEFAULT,
-    CX_COLOR_RED,
-    CX_COLOR_GREEN,
-    CX_COLOR_YELLOW,
-    CX_COLOR_ORANGE,
-    CX_COLOR_BLUE,
-    CX_COLOR_MAGENTA,
-    CX_COLOR_CYAN,
-    CX_COLOR_LGRAY,
-    CX_COLOR_DGRAY,
-    CX_COLOR_WHITE,
-    CX_COLOR_BLACK,
-    CX_COLOR_AUXC
+    CX_COLOR_DEFAULT = 0,
+    CX_COLOR_RED = 91,
+    CX_COLOR_GREEN = 92,
+    CX_COLOR_YELLOW = 93,
+    CX_COLOR_BLUE = 94,
+    CX_COLOR_MAGENTA = 95,
+    CX_COLOR_CYAN = 96,
+    CX_COLOR_LGRAY = 37,
+    CX_COLOR_DGRAY = 90,
+    CX_COLOR_WHITE = 97,
+    CX_COLOR_BLACK = 30,
+    CX_COLOR_AUXC = 8
 } cx_builtincolor_t;
 
 #endif
